@@ -159,7 +159,7 @@ function set_display_state() {
 
 function manual_increment() {
     get_display_state();
-    bonus_clicks = click_performance_multiple * current_performance;
+    bonus_clicks = Math.ceil(click_performance_multiple * current_performance);
     n_widgets += (1 + bonus_clicks);
     lifetime_widgets += (1 + bonus_clicks);
     set_display_state();
