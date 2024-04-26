@@ -34,7 +34,7 @@ var performance_scale_lim = 1;
 const AUTO_RATE = 1;
 const TICK_LENGTH = 50;
 const SEC_PER_TICK = (TICK_LENGTH / 1000);
-const PRICE_UP_MULT = 1.2;
+const PRICE_UP_MULT = 1.1;
 
 //graph stats
 const xValues = [...Array(300).keys()];
