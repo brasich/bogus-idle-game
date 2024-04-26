@@ -1,3 +1,8 @@
+//prevent double tap zoom
+document.ondblclick = function(e) {
+  e.preventDefault();
+}
+
 //buttons
 var increment_button = document.getElementById("manual");
 var buy_auto_button = document.getElementById("buy_auto");
