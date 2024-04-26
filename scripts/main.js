@@ -1,8 +1,3 @@
-//prevent double tap zoom
-document.ondblclick = function(e) {
-  e.preventDefault();
-}
-
 //buttons
 var increment_button = document.getElementById("manual");
 var buy_auto_button = document.getElementById("buy_auto");
@@ -11,6 +6,14 @@ var n_widgets_disp = document.getElementById("n_widgets");
 var n_auto_disp = document.getElementById("n_auto");
 var auto_cost_disp = document.getElementById("auto_cost");
 var current_performance_disp = document.getElementById("current_performance");
+
+//prevent double tap zoom
+increment_button.ondblclick = function(e) {
+  e.preventDefault();
+}
+buy_auto_button.ondblclick = function(e) {
+  e.preventDefault();
+}
 
 //display values
 var n_widgets = 0;
